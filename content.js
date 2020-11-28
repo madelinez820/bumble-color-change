@@ -65,3 +65,13 @@ function addMutator(){
     const observer = new MutationObserver(callback);
     observer.observe(targetNode, config);
 }
+
+/**
+ * TODO:
+ * - add color picker to un-hardcode #000 in popup.js
+ * - make popup.html look better
+ * - make logo (B with rainbow, add to images and add in popup too)
+ * - privacy policy?
+ * - update README
+ * - publish?
+ */
