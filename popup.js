@@ -1,11 +1,10 @@
 
-let color = "#000000"; // TODO hardcoded
+let color = "#000"; // TODO unhardcode
 
 function changeColor() {
     chrome.tabs.query({currentWindow: true, active: true}, function (tabs){
     var activeTab = tabs[0];
-    //TODO unhardcode color
-    chrome.tabs.sendMessage(activeTab.id, {"message": "changeColor","color": "#000"});
+    chrome.tabs.sendMessage(activeTab.id, {"message": "changeColor","color": color});
    });
 }
 
