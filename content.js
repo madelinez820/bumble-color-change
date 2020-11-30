@@ -46,18 +46,26 @@ chrome.runtime.onMessage.addListener(
 );
 
 // adds a mutator to check when the screen is on a different person's messages with you
-var existCondition = setInterval(function() {
+var existCondition1 = setInterval(function() {
     if (document.getElementsByClassName("page__profile").length > 0) {
-       clearInterval(existCondition);
-       addMutator();
+       clearInterval(existCondition1);
+       addMutator("page__profile");
+    }
+   }, 100); // check every 100ms
+
+// adds a mutator to check when a new message is received
+var existCondition2 = setInterval(function() {
+    if (document.getElementsByClassName("messages-list__conversation").length > 0) {
+       clearInterval(existCondition2);
+       addMutator("messages-list__conversation");
     }
    }, 100); // check every 100ms
 
 /**
  * Helper function that fires (maybe a couple of times) when you click on another person
  */
-function addMutator(){
-    const targetNode = document.getElementsByClassName('page__profile')[0];
+function addMutator(ele){
+    const targetNode = document.getElementsByClassName(ele)[0];
     const config = { attributes: true, childList: true, subtree: true };
     const callback = function(mutationsList, observer) {
         changeColor(); 
