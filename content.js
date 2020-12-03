@@ -76,9 +76,7 @@ function addMutator(ele){
 
 /**
  * TODO:
- * - add color picker to un-hardcode #000 in popup.js
  * - make popup.html look better
- * - some way to show current color(?)
  * - make logo (B with rainbow, add to images and add in popup too)
  * - privacy policy?
  * - update README
