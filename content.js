@@ -76,7 +76,7 @@ function addMutator(ele){
 
 /**
  * TODO:
- * - make popup.html look better
+ * - make popup.html look better (grey out "Change color" button if the selection is same as what is currently the color)
  * - make logo (B with rainbow, add to images and add in popup too)
  * - privacy policy?
  * - update README

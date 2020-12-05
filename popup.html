@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
+      button {
+        margin-left: 3px;
+        margin-right: 3px;
+      }
       body {
-        min-width: 200px; 
+        min-width: 250px; 
         max-width: 100%;
         position: relative;
         text-align: center;
         padding: 10px;
+        font-family: "Galano Grotesque",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+      }
+      div {
+        padding-bottom: 10px;
+      }
+      #logo {
+        padding-right: 13px;
+        padding-left: 9px;
+        padding-top: 7px;
+        float: left;
       }
     </style>
   </head>
   <body>
-    <h3> Color Changer For Bumble </h3>
-    <input id="colorPicker" type="color"/>
-    <button id="changeColor">Change Color</button>
-    <button id="resetColor">Reset</button>
+    <div>
+      <img id="logo" src="images/get_started32.png">
+      <h5 style="text-align: left;"> Color Changer For Bumble </h5>
+    </div>
+    <div>
+      Message Color:
+      <input id="colorPicker" type="color"/>
+    </div>
+    <div>
+      <button id="changeColor" class="btn btn-dark">Change Color</button>
+      <button id="resetColor" class="btn btn-outline-danger">Reset</button>
+    </div>
+
     <script src="popup.js"></script>
   </body>
   
