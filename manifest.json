@@ -1,7 +1,7 @@
 {
     "name": "Bumble Color Change Extension",
     "version": "1.0",
-    "description": "Customize Your Bumble Messaging Colors",
+    "description": "Customize Your Bumble Message Colors",
     "permissions": ["declarativeContent","storage"],
     "background": {
       "scripts": ["background.js"],
