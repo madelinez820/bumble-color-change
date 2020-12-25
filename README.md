@@ -6,6 +6,8 @@ Before            |  After
 :-------------------------:|:-------------------------:
 <img src="images/before.png" width="400">  |  <img src="images/after.png" width="400">
 
+Try it out on the chrome web store [here](https://chrome.google.com/webstore/detail/bumble-color-change/blhdbcdmicdfgjchkleidopecnjafhld).
+
 \* I've only tested this on Bumble BFF (I don't have Bumble Date or Bumble Bizz)
 
 \* Bumble Color Changer is not created by, affiliated with, or supported by Bumble Trading Inc
